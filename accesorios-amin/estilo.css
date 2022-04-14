@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Jost', sans-serif;
+    line-height: 35px;
+}
+h1 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.titulo {
+    background-color: #9999ff;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    padding: 1rem;
+    background-color: #2c2c2c;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1rem;
+}
+nav a:hover {
+    background-color: #565656;
+    transition: all .25s;
+}
+h2 {
+    color: #2c2c2c;
+    font-weight: 900;
+}
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://p1.pxfuel.com/preview/162/139/818/wood-texture-white-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0 4rem 0;
+    height: 80vh;
+}
+.fotos img {
+    object-fit: cover;
+    height: 50vh;
+    width: 60vw;
+    border-radius: 5%;
+    transition: all 1s;
+}
+.fotos img:hover {
+    transform: scale(1.1);
+}
+.elementoCentrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abajoDeFotos {
+    padding: 1.5rem;
+    text-align: center;
+}
+.texto {
+    width: 100%;
+    height: 20%;
+    padding: 60px;
+    text-align: center;
+    overflow: auto;
+    padding: 1.5rem;
+}
+iframe {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    transition: all 1s;
+}
+iframe:hover {
+    transform: scale(1.05);
+}
+footer {
+    height: 12vh;
+    background-color: #2c2c2c;
+    color: white;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover {
+    color: #9999ff;
+    transition: all .25s;
+}
+/*Propiedades de la página Productos*/
+.titulos {
+    padding: 1rem;
+    text-align: center;
+}
+.contenidoProductos {
+    padding: 0 10rem 0 10rem;
+}
+.cajaProductos {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.producto {
+    display: inline-block;
+    margin: 1rem;
+    background-color: #2c2c2c;
+    width: 230px;
+    height: 410px;
+    border-radius: 7%;
+    color: white;
+    padding: 1rem;
+    flex-wrap: wrap;
+    transition: all 1s;
+}
+.producto:hover {
+    transform: scale(1.05);
+}
+.comprar {
+    background-color: white;
+    border-radius: 20%;
+    color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    width: 70px;
+}
+.comprar:hover {
+    background-color: #9999ff;
+    transition: all .25s;
+}
+/*Propiedades de la página Nosotros*/
+.integrantes {
+    width: 50%;
+    border: #2c2c2c 4px solid;
+    margin: 0 0 1.5rem 0;
+}
+.imagenIntegrantes, .textoIntegrantes {
+    padding: 1.5rem;
+}
+.imagenIntegrantes img {
+    width: 20vw;
+}
+/*Propiedades de las páginas Contacto y Registro*/
+form {
+    width: 60vw;
+    padding: 1rem;
+    padding-top: .1rem;
+    margin-bottom: 1rem;
+}
+fieldset {
+    padding: 1rem;
+    padding-top: .1rem;
+}
+.contenidoContacto {
+    height: 68vh;
+}
+.contenidoRegistro {
+    display: block;
+}
+@media only screen and (max-width: 520px) {
+    .titulo {
+        height: 12vh;
+    }
+    nav {
+        height: 10vh;
+        width: 100vw;
+    }
+    nav a {
+        padding: .5rem;
+    }
+    .fotos {
+        width: 100vw;
+        height: 78vh;
+        background-size: cover;
+    }
+    .fotos img {
+        width: 80vw;
+        height: 70vh;
+        border-radius: 10%;
+    }
+    /*Propiedades de la página Productos*/
+    .contenidoProductos {
+        padding: 0 5rem 0 5rem;
+    }
+    /*Propiedades de la página Nosotros*/
+    .contenidoNosotros {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    .contenidoNosotros h2 {
+        display: flex;
+        justify-content: center;
+    }
+    .contenidoNosotros p {
+        text-align: center;
+    }
+    .integrantes {
+        display: block;
+        width: 80vw;
+    }
+    .imagenIntegrantes img {
+        width: 60vw;
+    }
+    /*Propiedades de la página Contacto y Registro*/
+    .contenidoContacto {
+        height: 100%;
+    }
+    form {
+        width: 80vw;
+    }
+}
+@media only screen and (max-width: 360px) {
+    nav {
+        font-size: .7rem;
+        height: 8vh;
+    }
+    .fotos {
+        height: 80vh;
+    }
+    iframe {
+        transform: scale(.8);
+        padding: 0;
+    }
+    .contenidoContacto {
+        height: 100%;
+    }
+}
