@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="animaciones.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -29,52 +30,108 @@
     <main>
         <section>
             <h2 class="elementoCentrado titulos">Productos disponibles:</h2>
-            <div class="elementoCentrado cajaProductos contenidoProductos">
-                <div class="producto">
-                    <img src="../imagenes/pulsera1.jpg" alt="pulsera blanca, amarilla y rosa" width="200">
-                    <h3>Pulsera eternity:</h3>
-                    <p>$200</p>
-                    <p class="comprar">Comprar</p>
+            <div class="elementoCentrado fotoProductos">
+                <img src="../imagenes/pulseras.jpg" alt="misma foto del inicio, con todos los productos desorganizados">
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Pulseras simples
+                    </button>
+                  </h5>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        <div class="elementoCentrado cajaProductos contenidoProductos">
+                            <div class="producto">
+                                <img src="../imagenes/pulsera4.jpg" alt="pulsera negra y amarilla con haches negras, de Hufflepuff">
+                                <h5>Pulsera Hufflepuff:</h5>
+                                <p>$150</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                            <div class="producto">
+                                <img src="../imagenes/pulsera5.jpg" alt="pulsera chevron colorida">
+                                <h5>Pulsera arrows:</h5>
+                                <p>$150</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                            <div class="producto">
+                                <img src="../imagenes/pulsera6.jpg" alt="tres pulseras finitas de un color diferente cada una">
+                                <h5>Pulsera plain beauty:</h5>
+                                <p>$100 (unidad)</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="producto">
-                    <img src="../imagenes/pulsera2.jpg" alt="pulsera de diferentes tonos azules" width="200">
-                    <h3>Pulsera snowflakes:</h3>
-                    <p>$200</p>
-                    <p class="comprar">Comprar</p>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Pulseras con patrones
+                    </button>
+                  </h5>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        <div class="elementoCentrado cajaProductos contenidoProductos">
+                            <div class="producto">
+                                <img src="../imagenes/pulsera7.jpg" alt="pulsera con fondo blanco y pequeñas rayas coloridas">
+                                <h5>Pulsera stripes:</h5>
+                                <p>$150</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                            <div class="producto">
+                                <img src="../imagenes/pulsera8.jpg" alt="pulsera candy-stripes colorida, con sección del medio invertida">
+                                <h5>Pulsera gravity:</h5>
+                                <p>$150</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                            <div class="producto">
+                                <img src="../imagenes/pulsera9.jpg" alt="pulsera azul, celeste y fucsia con un complejo patrón de líneas">
+                                <h5>Pulsera illusion:</h5>
+                                <p>$200</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                <br>
-                <div class="producto">
-                    <img src="../imagenes/pulsera3.jpg" alt="pulsera de margaritas" width="200">
-                    <h3>Pulsera daisies:</h3>
-                    <p>$200</p>
-                    <p class="comprar">Comprar</p>
-                </div>
-                <!--Repito los productos para probar el responsive con más elementos-->
-                <div class="producto">
-                    <img src="../imagenes/pulsera1.jpg" alt="pulsera blanca, amarilla y rosa" width="200">
-                    <h3>Pulsera eternity:</h3>
-                    <p>$200</p>
-                    <p class="comprar">Comprar</p>
-                </div>
-                <div class="producto">
-                    <img src="../imagenes/pulsera2.jpg" alt="pulsera de diferentes tonos azules" width="200">
-                    <h3>Pulsera snowflakes:</h3>
-                    <p>$200</p>
-                    <p class="comprar">Comprar</p>
-                </div>
-                <br>
-                <div class="producto">
-                    <img src="../imagenes/pulsera3.jpg" alt="pulsera de margaritas" width="200">
-                    <h3>Pulsera daisies:</h3>
-                    <p>$200</p>
-                    <p class="comprar">Comprar</p>
+                <div class="accordion-item">
+                  <h5 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Pulseras con patrones complejos
+                    </button>
+                  </h5>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        <div class="elementoCentrado cajaProductos contenidoProductos">
+                            <div class="producto">
+                                <img src="../imagenes/pulsera1.jpg" alt="pulsera blanca, amarilla y rosa">
+                                <h5>Pulsera eternity:</h5>
+                                <p>$200</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                            <div class="producto">
+                                <img src="../imagenes/pulsera2.jpg" alt="pulsera de diferentes tonos azules">
+                                <h5>Pulsera snowflakes:</h5>
+                                <p>$200</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                            <div class="producto">
+                                <img src="../imagenes/pulsera3.jpg" alt="pulsera de margaritas">
+                                <h5>Pulsera daisies:</h5>
+                                <p>$200</p>
+                                <p class="comprar">Comprar</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
             </div>
-            <br>
         </section>
     </main>
     <footer>
-        <h4 class="elementoCentrado">Encontranos en:</h4>
+        <h5 class="elementoCentrado">Encontranos en:</h5>
         <div class="elementoCentrado">
             <ul>
                 <li><a href="https://www.facebook.com/guada.amin" target="_blank">Facebook</a></li>
@@ -84,7 +141,7 @@
                 <li><a href="https://www.twitter.com/guadaamin" target="_blank">Twitter</a></li>
             </ul>
         </div>
-    </div>
-</footer>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
