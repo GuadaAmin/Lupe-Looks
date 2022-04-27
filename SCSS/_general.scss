@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Jost', sans-serif;
+    line-height: 2rem;
+}
+h1 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.titulos {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Jost', sans-serif;
+    color: $grisoscuro;
+    font-weight: 900;
+}
+.elementoCentrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto {
+    width: 100%;
+    height: 20%;
+    padding: 60px;
+    text-align: center;
+    overflow: auto;
+    padding: 1.5rem;
+}
+  

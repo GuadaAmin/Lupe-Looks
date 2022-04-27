@@ -1,0 +1,32 @@
+.integrantes {
+    width: 50%;
+    border: $grisoscuro 4px solid;
+    margin: 0 0 1.5rem 0;
+}
+.imagenIntegrantes, .textoIntegrantes {
+    padding: 1.5rem;
+    img {
+        width: 20vw;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .contenidoNosotros {
+        padding: 0 1.5rem 0 1.5rem;
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .integrantes {
+        display: block;
+        width: 80vw;
+    }
+    .imagenIntegrantes {
+        img {
+        width: 60vw;
+        }
+    }
+}

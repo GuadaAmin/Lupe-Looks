@@ -1,0 +1,73 @@
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://p1.pxfuel.com/preview/162/139/818/wood-texture-white-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0 4rem 0;
+    height: 80vh;
+}
+.carousel-control-prev-icon {
+    padding: .5rem;
+    background-color: black;
+}
+.carousel-control-next-icon {
+    padding: .5rem;
+    background-color: black;
+}
+.fotosDesktop {
+    display: contents;
+}
+.fotosMobile {
+    display: none;
+}
+.fotoProductos {
+    img {
+        object-fit: cover;
+    }
+}
+.abajoDeFotos {
+    padding: 1.5rem;
+    text-align: center;
+}
+iframe {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    transition: all 1s;
+    &:hover {
+    transform: scale(1.05);
+    }
+}
+@media only screen and (max-width: 520px) {
+    .fotos {
+        width: 100vw;
+        height: 78vh;
+        background-size: cover;
+    }
+    .fotosDesktop {
+        display: none;
+    }
+    .fotosMobile {
+        display: contents;
+        img {
+            width: 80vw;
+            height: 70vh;
+            border-radius: 10%;
+            object-fit: cover;
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+    .fotos {
+        height: 80vh;
+    }
+    iframe {
+        transform: scale(.8);
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 280px) {
+    iframe {
+        transform: scale(.7);
+    }
+}

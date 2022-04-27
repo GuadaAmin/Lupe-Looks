@@ -1,0 +1,50 @@
+form {
+    width: 60vw;
+    padding: 1rem;
+    padding-top: .1rem;
+    margin-bottom: 1rem;
+}
+fieldset {
+    padding: 1rem;
+    padding-top: .1rem;
+}
+.contenidoContacto {
+    height: 68vh;
+}
+.contenidoRegistro {
+    display: block;
+}
+.button {
+    padding: .5rem .8rem;
+    margin: .5rem;
+    font-size: .8rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: $colorprincipal;
+    border: none;
+    border-radius: .8rem;
+    box-shadow: 0 .3rem #999;
+    &:hover {
+        background-color: #7878fa;
+      }
+    &:active {
+        background-color: #c2c2ff;
+        box-shadow: 0.2rem #666;
+        transform: translateY(4px);
+    }
+}
+@media only screen and (max-width: 520px) {
+    .contenidoContacto {
+        height: 100%;
+    }
+    form {
+        width: 80vw;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .contenidoContacto {
+        height: 100%;
+    }
+}
