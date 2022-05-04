@@ -1,18 +1,12 @@
 .fotos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend elementoCentrado;
     background-image: url("https://p1.pxfuel.com/preview/162/139/818/wood-texture-white-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 4rem 0 4rem 0;
     height: 80vh;
 }
-.carousel-control-prev-icon {
-    padding: .5rem;
-    background-color: black;
-}
-.carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
     padding: .5rem;
     background-color: black;
 }
@@ -32,16 +26,15 @@
     text-align: center;
 }
 iframe {
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     transition: all 1s;
     &:hover {
-    transform: scale(1.05);
+        transform: scale(1.05);
     }
 }
 @media only screen and (max-width: 520px) {
     .fotos {
-        width: 100vw;
-        height: 78vh;
+        @include hw (78vh, 100vw);
         background-size: cover;
     }
     .fotosDesktop {
@@ -50,8 +43,7 @@ iframe {
     .fotosMobile {
         display: contents;
         img {
-            width: 80vw;
-            height: 70vh;
+            @include hw (70vh, 80vw);
             border-radius: 10%;
             object-fit: cover;
         }
@@ -63,7 +55,7 @@ iframe {
     }
     iframe {
         transform: scale(.8);
-        padding: 0;
+        @include box (0, 0);
     }
 }
 @media only screen and (max-width: 280px) {

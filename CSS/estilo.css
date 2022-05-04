@@ -237,6 +237,10 @@ form {
   padding-top: .1rem;
   margin-bottom: 1rem; }
 
+textarea {
+  font-family: 'Jost', sans-serif;
+  padding-left: .3rem; }
+
 fieldset {
   padding: 1rem;
   padding-top: .1rem; }

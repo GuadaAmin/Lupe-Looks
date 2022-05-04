@@ -1,0 +1,2 @@
+En esta entrega, añadí dos mixins (uno de margin y padding, y otro de height y width). También añadí unos cuantos extends, todos para centrar elementos. 
+En cuanto a SEO, añadí una descripción personalizada a cada página del sitio, y keywords a las páginas donde sentía que eran necesarias. No hice mucho más que eso, ya que ya había ido añadiendo alts y nombres específicos a cada imagen, y que estas no son pesadas tampoco como para optimizar aquello. 

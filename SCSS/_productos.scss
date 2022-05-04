@@ -14,13 +14,11 @@
 }
 .producto {
     display: inline-block;
-    margin: 1rem;
+    @include box (2rem, 1rem);
     background-color: $grisoscuro;
-    width: 14.5rem;
-    height: 18rem;
+    @include hw (20rem, 14.5rem);
     border-radius: 7%;
     color: white;
-    padding: 1rem;
     flex-wrap: wrap;
     transition: all 1s;
     &:hover {
@@ -30,17 +28,8 @@
         width: 200px;
         margin-bottom: .5rem;
     }
-}
-.comprar {
-    background-color: white;
-    border-radius: 20%;
-    color: $grisoscuro;
-    display: flex;
-    justify-content: center;
-    width: 70px;
-    &:hover {
-        background-color: $colorprincipal;
-        transition: all .25s;
+    .button {
+        margin-bottom: 1rem;
     }
 }
 @media only screen and (max-width: 520px) {
