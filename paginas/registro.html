@@ -16,18 +16,37 @@
 </head>
 <body>
     <header>
-        <div class="titulo">
-            <a href="../index.html"><img src="../imagenes/logo.png" alt="Logo de Lupe Looks" class="animate__animated animate__bounce titulo"></a>
-            <h1 class="animate__animated animate__bounce">Lupe Looks</h1>
+        <div class="navDesktop">
+            <div class="titulo">
+                <a href="../index.html"><img src="../imagenes/logo.png" alt="Logo de Lupe Looks" class="animate__animated animate__bounce titulo"></a>
+                <h1 class="animate__animated animate__bounce">Lupe Looks</h1>
+            </div>
+            <div>
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="./productos.html">Productos</a>
+                    <a href="./nosotros.html">Nosotros</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <a href="./registro.html">Registro</a>
+                </nav>
+            </div>
         </div>
-        <div>
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="./productos.html">Productos</a>
-                <a href="./nosotros.html">Nosotros</a>
-                <a href="./contacto.html">Contacto</a>
-                <a href="./registro.html">Registro</a>
-            </nav>
+        <div class="navMobile">
+            <div class="titulo">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <a href="../index.html"><img src="../imagenes/logo.png" alt="Logo de Lupe Looks" class="animate__animated animate__bounce titulo"></a>
+                <h1 class="animate__animated animate__bounce">Lupe Looks</h1>
+            </div>
+            <div class="sidenav" id="mySidenav">
+                <nav>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="../index.html">Inicio</a>
+                    <a href="./productos.html">Productos</a>
+                    <a href="./nosotros.html">Nosotros</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <a href="./registro.html">Registro</a>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -92,7 +111,15 @@
                 <li><a href="https://www.twitter.com/guadaamin" target="_blank">Twitter</a></li>
             </ul>
         </div>
-    </div>
-</footer>
+    </footer>
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>

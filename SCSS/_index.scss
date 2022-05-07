@@ -1,5 +1,5 @@
 .fotos {
-    @extend elementoCentrado;
+    @extend .elementoCentrado;
     background-image: url("https://p1.pxfuel.com/preview/162/139/818/wood-texture-white-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@ iframe {
 }
 @media only screen and (max-width: 520px) {
     .fotos {
-        @include hw (78vh, 100vw);
+        @include hw (86vh, 100vw);
         background-size: cover;
     }
     .fotosDesktop {
@@ -50,9 +50,6 @@ iframe {
     }
 }
 @media only screen and (max-width: 360px) {
-    .fotos {
-        height: 80vh;
-    }
     iframe {
         transform: scale(.8);
         @include box (0, 0);

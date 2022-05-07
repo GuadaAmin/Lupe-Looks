@@ -11,7 +11,7 @@ h1 {
     font-family: 'Righteous', cursive;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 @mixin hw ($height, $width) {
     width: $width;
@@ -33,6 +33,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.elementoIzquierda {
+    display: flex;
+    justify-content: flex-start;
 }
 .texto {
     @include hw (20%, 100%);

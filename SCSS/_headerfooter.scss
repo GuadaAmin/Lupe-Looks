@@ -7,7 +7,7 @@
     justify-content: center;
     margin-bottom: 0;
     img {
-        width: 3rem;
+        @include hw (3.5rem, auto);
     }
 }
 nav {
@@ -34,11 +34,58 @@ nav {
 .navMobile {
     display: none;
 }
+.barraTitulo {
+    display: flex;
+}
+.sidenav {
+    @include hw (100%, 0);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $grisoscuro;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3.5rem;
+    a {
+        padding: .5rem 0 2rem .5rem;
+        text-decoration: none;
+        font-size: 1.3rem;
+        display: block;
+        transition: 0.3s;
+        &:focus {
+            color: #f1f1f1;
+        }
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 1.5rem;
+        font-size: 2rem;
+        margin-left: 3.2rem;
+    }
+    nav {
+        padding: .5rem;
+        @include hw (8vh, 100%);
+        display: block;
+        a {
+            text-decoration: none;
+            color: white;
+            padding: .5rem 1rem;
+            &:focus {
+                background-color: $grisclaro;
+                color: white;
+                transition: all .25s;
+            }
+        }
+    }
+  }
+
 footer {
     height: 14vh;
     background-color: $grisoscuro;
     color: white;
-    padding: .7rem, 0;
+    padding: 1rem;
     h5 {
         font-size: 1rem;
     }
@@ -59,31 +106,16 @@ footer {
 }
 @media only screen and (max-width: 520px) {
     .titulo {
-        height: 12vh;
+        height: 14vh;
     }
-    /*nav {
-        @include hw (10vh, 100vw);
-        a {
-            padding: .5rem;
-        }
-    }*/
     .navDesktop {
         display: none;
     }
     .navMobile {
         display: contents;
     }
-}  
-@media only screen and (max-width: 360px) {
-    nav {
-        font-size: .7rem;
-        height: 8vh;
-    }
-}
-@media only screen and (max-width: 280px) {
-    nav {
-        font-size: .6rem;
-    } 
+} 
+@media only screen and (max-width: 280px) { 
     footer {
         width: 100%;
     }

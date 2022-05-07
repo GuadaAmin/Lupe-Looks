@@ -14,7 +14,7 @@
 }
 .producto {
     display: inline-block;
-    @include box (2rem, 1rem);
+    @include box (1rem, 1rem);
     background-color: $grisoscuro;
     @include hw (20rem, 14.5rem);
     border-radius: 7%;
@@ -22,11 +22,14 @@
     flex-wrap: wrap;
     transition: all 1s;
     &:hover {
-        transform: scale(1.05); 
+        transform: scale(1.05);
     }
     img {
         width: 200px;
         margin-bottom: .5rem;
+    }
+    h5 {
+        margin-top: 1rem;
     }
 }
 @media only screen and (max-width: 520px) {
