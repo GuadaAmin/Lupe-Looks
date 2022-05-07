@@ -27,10 +27,6 @@ h1 {
   justify-content: center;
   align-items: center; }
 
-.elementoIzquierda {
-  display: flex;
-  justify-content: flex-start; }
-
 .texto {
   width: 100%;
   height: 20%;
@@ -68,7 +64,8 @@ h1 {
   margin-bottom: 0; }
   .titulo img {
     width: auto;
-    height: 3.5rem; }
+    height: 3.5rem;
+    margin-right: .5rem; }
 
 nav {
   padding: 1rem;
@@ -92,9 +89,6 @@ nav {
 
 .navMobile {
   display: none; }
-
-.barraTitulo {
-  display: flex; }
 
 .sidenav {
   width: 0;
@@ -154,7 +148,17 @@ footer {
 
 @media only screen and (max-width: 520px) {
   .titulo {
-    height: 14vh; }
+    height: 14vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: .8rem; }
+    .titulo .nombre {
+      margin: 0 1.5rem 0 1.5rem;
+      width: 60vw; }
+    .titulo .icono {
+      width: 10vw; }
+    .titulo h1 {
+      font-size: 1.8rem; }
   .navDesktop {
     display: none; }
   .navMobile {
@@ -303,7 +307,7 @@ fieldset {
 
 @media only screen and (max-width: 520px) {
   .contenidoContacto {
-    height: 100%; }
+    height: 72vh; }
   form {
     width: 80vw; } }
 

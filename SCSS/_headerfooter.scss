@@ -8,6 +8,7 @@
     margin-bottom: 0;
     img {
         @include hw (3.5rem, auto);
+        margin-right: .5rem;
     }
 }
 nav {
@@ -33,9 +34,6 @@ nav {
 }
 .navMobile {
     display: none;
-}
-.barraTitulo {
-    display: flex;
 }
 .sidenav {
     @include hw (100%, 0);
@@ -80,7 +78,6 @@ nav {
         }
     }
   }
-
 footer {
     height: 14vh;
     background-color: $grisoscuro;
@@ -107,6 +104,19 @@ footer {
 @media only screen and (max-width: 520px) {
     .titulo {
         height: 14vh;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: .8rem;
+        .nombre {
+            margin: 0 1.5rem 0 1.5rem;
+            width: 60vw;
+        }
+        .icono {
+            width: 10vw;
+        }
+        h1 {
+            font-size: 1.8rem;
+        }
     }
     .navDesktop {
         display: none;
