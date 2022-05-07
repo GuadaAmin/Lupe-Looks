@@ -22,14 +22,11 @@
     flex-wrap: wrap;
     transition: all 1s;
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.05); 
     }
     img {
         width: 200px;
         margin-bottom: .5rem;
-    }
-    .button {
-        margin-bottom: 1rem;
     }
 }
 @media only screen and (max-width: 520px) {
