@@ -7,7 +7,7 @@
     justify-content: center;
     margin-bottom: 0;
     img {
-        width: 60px;
+        width: 3rem;
     }
 }
 nav {
@@ -27,6 +27,12 @@ nav {
             transition: all .25s;
         }
     }
+}
+.navDesktop {
+    display: contents;
+}
+.navMobile {
+    display: none;
 }
 footer {
     height: 14vh;
@@ -55,11 +61,17 @@ footer {
     .titulo {
         height: 12vh;
     }
-    nav {
+    /*nav {
         @include hw (10vh, 100vw);
         a {
             padding: .5rem;
         }
+    }*/
+    .navDesktop {
+        display: none;
+    }
+    .navMobile {
+        display: contents;
     }
 }  
 @media only screen and (max-width: 360px) {
