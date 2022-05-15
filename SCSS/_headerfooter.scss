@@ -6,6 +6,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    h1 {
+        font-family: 'Righteous', cursive;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
     img {
         @include hw (3.5rem, auto);
         margin-right: .5rem;
@@ -26,6 +33,7 @@ nav {
             background-color: $grisclaro;
             color: white;
             transition: all .25s;
+            border-radius: 10%;
         }
     }
 }
@@ -82,11 +90,14 @@ footer {
     height: 14vh;
     background-color: $grisoscuro;
     color: white;
-    padding: 1rem;
-    h5 {
+    padding: .8rem;
+    font-family: 'Jost', sans-serif;
+    h4 {
         font-size: 1rem;
+        font-weight: 800;
     }
     ul {
+        padding: 0;
         li {
             display: inline-block;
             font-size: 1rem;
@@ -103,7 +114,7 @@ footer {
 }
 @media only screen and (max-width: 520px) {
     .titulo {
-        height: 14vh;
+        height: 12vh;
         display: flex;
         justify-content: flex-start;
         padding-left: .8rem;

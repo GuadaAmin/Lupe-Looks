@@ -34,7 +34,7 @@ iframe {
 }
 @media only screen and (max-width: 520px) {
     .fotos {
-        @include hw (86vh, 100vw);
+        @include hw (88vh, 100vw);
         background-size: cover;
     }
     .fotosDesktop {
@@ -44,7 +44,7 @@ iframe {
         display: contents;
         img {
             @include hw (70vh, 80vw);
-            border-radius: 10%;
+            border-radius: 4%;
             object-fit: cover;
         }
     }

@@ -1,5 +1,5 @@
 form {
-    width: 60vw;
+    width: 50vw;
     padding: 1rem;
     padding-top: .1rem;
     margin-bottom: 1rem;
@@ -7,21 +7,24 @@ form {
 textarea {
     font-family: 'Jost', sans-serif;
     padding-left: .3rem;
+    width: 100%;
 }
 fieldset {
     padding: 1rem;
     padding-top: .1rem;
 }
-.contenidoContacto {
-    height: 66vh;
-}
 .contenidoRegistro {
     display: block;
 }
+input {
+    padding: .2rem;
+    width: 100%;
+}
+.checkbox {
+    padding: 1rem;
+    width: auto;
+}
 @media only screen and (max-width: 520px) {
-    .contenidoContacto {
-        height: 72vh;
-    }
     form {
         width: 80vw;
     }
