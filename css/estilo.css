@@ -86,7 +86,8 @@ nav {
   nav a {
     text-decoration: none;
     color: white;
-    padding: .5rem 1rem .5rem 1rem; }
+    padding: .5rem 1rem .5rem 1rem;
+    margin: 0; }
     nav a:hover {
       background-color: #565656;
       color: white;
@@ -95,7 +96,7 @@ nav {
       margin: 0; }
 
 .active {
-  background-color: #565656;
+  text-decoration: underline;
   color: white; }
 
 .navDesktop {

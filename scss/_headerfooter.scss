@@ -33,6 +33,7 @@ nav {
         text-decoration: none;
         color: white;
         padding: .5rem 1rem .5rem 1rem;
+        margin: 0;
         &:hover {
             background-color: $grisclaro;
             color: white;
@@ -43,7 +44,7 @@ nav {
     }
 }
 .active {
-    background-color: $grisclaro;
+    text-decoration: underline;
     color: white;
 }
 .navDesktop {
