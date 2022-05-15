@@ -30,8 +30,8 @@ body {
   margin: 0; }
 
 .button {
-  padding: 0.5rem 0.8rem;
-  margin: 0.5rem;
+  padding: .5rem .8rem;
+  margin: .3rem 0;
   font-size: .8rem;
   text-align: center;
   cursor: pointer;
