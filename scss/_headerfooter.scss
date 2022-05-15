@@ -36,16 +36,21 @@ nav {
         margin: 0;
         &:hover {
             background-color: $grisclaro;
-            color: white;
             transition: all .25s;
             border-radius: 5%;
             margin: 0;
         }
     }
 }
-.active {
-    text-decoration: underline;
-    color: white;
+.navDesktop {
+    .active {
+        text-decoration: underline;
+    }
+}
+.navMobile {
+    .active {
+        background-color: $grisclaro;
+    }
 }
 .navDesktop {
     display: contents;
