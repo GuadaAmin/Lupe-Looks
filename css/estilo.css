@@ -50,7 +50,7 @@ body {
 
 @media only screen and (max-width: 520px) {
   .titulos {
-    padding-top: 2rem; } }
+    padding-top: 1.5rem; } }
 
 .titulo {
   background-color: #9999ff;
@@ -247,6 +247,9 @@ iframe {
 
 .contenidoProductos {
   padding: 0 10rem 0 10rem; }
+
+.paginaProductos {
+  min-height: 76vh; }
 
 .fotoProductos {
   margin-bottom: 1rem; }
