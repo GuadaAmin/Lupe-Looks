@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Solo el Index y la página Productos tienen Bootstrap, por lo que debí añadir mucho código en el CSS que sería inncesesario de otra manera, para pisar ciertas cosas que generaban variación en cosas que debían permanecer iguales entre página y página. Esto ocurrió en el header y el footer principalemente. */
 * {
   margin: 0;
   padding: 0;
@@ -87,9 +89,12 @@ nav {
     text-decoration: none;
     color: white;
     padding: .5rem 1rem .5rem 1rem;
-    margin: 0; }
+    height: 44px;
+    display: flex;
+    align-items: center; }
     nav a:hover {
       background-color: #565656;
+      color: white;
       transition: all .25s;
       border-radius: 5%;
       margin: 0; }
@@ -284,7 +289,9 @@ iframe {
   .contenidoProductos {
     padding: 0 5rem 0 5rem; }
   .fotoProductos img {
-    width: 80vw; } }
+    width: 80vw; }
+  .paginaProductos {
+    min-height: 78vh; } }
 
 .integrantes {
   width: 50%;
